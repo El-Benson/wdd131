@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #3c0101;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+
+#menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #d72638;
+  border-radius: 5px;
+}
+
+.navigation a:hover {
+  background-color: #ec008c;
+  border-radius: 4px;
+  transform: scale(1.05);
+}
+
+.navigation.show {
+  display: flex;
+}
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+figure:hover {
+  transform: scale(1.02);
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #eee;
+}
+
+footer {
+  background-color: #3c0101;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.3rem;
+}
+@media (min-width: 800px) {
+  #menu {
+    display: none !important;
+  }
+
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    background: none;
+    padding: 0;
+  }
+}
