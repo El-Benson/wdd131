@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Ade-Benson Taiye Kehinde Michael" >
+    <meta
+      name="description"
+      content="Website planning document for portfolio project"
+    >
+    <title>Site Plan | Ade-Benson Kehinde Michael Portfolio</title>
+    <link rel="stylesheet" href="styles/siteplan.css" >
+  </head>
+  <body>
+    <header>
+      <h1> Ade-Benson Kehinde Michael - Portfolio Site Plan</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Site Name</h2>
+        <p><strong>Michael Web Portfolio</strong></p>
+        <p>
+          This name reflects my identity and clearly communicates that the
+          website is a showcase of my web development work. It’s professional,
+          personalized, and brandable.
+        </p>
+      </section>
+
+      <section>
+        <h2>Site Purpose</h2>
+        <p>
+          This portfolio website serves as a digital résumé and project showcase
+          for Ade-Benson Kehinde Michael. It will highlight my web development
+          skills, completed projects, and offer ways for potential employers or
+          clients to contact me for freelance or full-time opportunities.
+        </p>
+      </section>
+
+      <section>
+        <h2>Scenarios</h2>
+        <ul>
+          <li>
+            What kind of web development work has Michael completed recently?
+          </li>
+          <li>How can I contact Gabriel to discuss a freelance project?</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Color Schema</h2>
+        <ul>
+          <li>
+            <strong>Primary Background Color:</strong> #1e1e1e – Used for the
+            main dark gray background of the site.
+          </li>
+          <li>
+            <strong>Accent Color:</strong> #0077cc – Used for highlights,
+            headings, buttons, and hover effects.
+          </li>
+          <li>
+            <strong>Card and Section Background:</strong> #2c2c2c – Used behind
+            main sections like About, Projects, and Contact for contrast.
+          </li>
+          <li>
+            <strong>Text Color:</strong> #f0f0f0 – Used for all primary readable
+            text.
+          </li>
+          <li>
+            <strong>Secondary Text/Muted:</strong> #cccccc – Used for dates,
+            hints, or secondary info.
+          </li>
+          <li>
+            <strong>Success/Alert Color:</strong> #44cc77 – Used in validation
+            or confirmation UI.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Typography</h2>
+        <ul>
+          <li>
+            <strong>Heading Font:</strong>
+            <a href="https://fonts.google.com/specimen/Poppins" target="_blank"
+              >Poppins</a
+            >, sans-serif – Used for all page titles, section headings, and
+            emphasized text.
+            <br >
+            <code>font-family: 'Poppins', sans-serif;</code>
+          </li>
+          <li>
+            <strong>Body Font:</strong>
+            <a
+              href="https://learn.microsoft.com/en-us/typography/font-list/segoe-ui"
+              target="_blank"
+              >Segoe UI</a
+            >, sans-serif – Used for general paragraph content, links, and form
+            labels.
+            <br >
+            <code>font-family: 'Segoe UI', sans-serif;</code>
+          </li>
+          <li>
+            <strong>Fallback Fonts:</strong>
+            System-safe sans-serif stack to ensure good rendering on all
+            devices.
+            <br >
+            <code
+              >font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
+              sans-serif;</code
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Wireframes</h2>
+        <p>
+          These simple wireframes represent the layout of the home page in
+          mobile and desktop views:
+        </p>
+        <div class="wireframes">
+          <figure>
+            <img src="images/mobile-wireframe.png" alt="Mobile wireframe" >
+            <figcaption>Mobile View</figcaption>
+          </figure>
+          <figure>
+            <img src="images/desktop-wireframe.png" alt="Desktop wireframe" >
+            <figcaption>Desktop View</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Ade-Benson kehinde Michael | WDD131 Project
+        Plan
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
