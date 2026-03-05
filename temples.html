@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+   <meta name="author" content="Ade-Benson Kehinde Michael">
+   <meta name="description" content="Explore the beautiful Temples around the world.">
+
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css" >
+    <link
+      rel="stylesheet"
+      href="styles/temples-large.css"
+      media="(min-width: 800px)"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    >
+    <script src="scripts/temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Temple Album</h1>
+
+        <button id="menu" aria-label="Menu">☰</button>
+
+        <nav class="navigation">
+          <a href="#">Home</a>
+          <a href="#">Old</a>
+          <a href="#">New</a>
+          <a href="#">Large</a>
+          <a href="#">Small</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="main-title">Home</h2>
+      <div class="album-grid">
+        <figure>
+          <img
+            src="images/sandiego-temple.webp"
+            alt="San Diego California Temple"
+          >
+          <figcaption>San Diego California</figcaption>
+        </figure>
+        <figure>
+          <img src="images/aba.jpg" alt="Aba Nigeria Temple" >
+          <figcaption>Aba Nigeria Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/lagos.webp" alt="Lagos Nigeria Temple" >
+          <figcaption>Lagos Nigeria Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/benin.png" alt="Benin City Nigeria Temple" >
+          <figcaption>Benin City Nigeria Temple</figcaption>
+        </figure>
+        <figure>
+          <img src="images/saltlake.png" alt="Salt Lake City Temple" >
+          <figcaption>Salt Lake City</figcaption>
+        </figure>
+        <figure>
+          <img src="images/provocity.jpg" alt="Provo City Center Temple" >
+          <figcaption>Provo City</figcaption>
+        </figure>
+        <figure>
+          <img src="images/manila.jpg" alt="Manila Philippines Temple" >
+          <figcaption>Manila Philippines</figcaption>
+        </figure>
+        <figure>
+          <img src="images/italyrome.jpeg" alt="Italy Rome Temple" >
+          <figcaption>Italy Rome</figcaption>
+        </figure>
+        <figure>
+          <img src="images/washington.jpg" alt="Washington DC Temple" >
+          <figcaption>Washington DC</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span>
+        <span class="footer-name">Ade-Benson Kehinde Michael</span>
+        <span class="footer-location">🇳🇬 Nigeria</span>
+      </p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
