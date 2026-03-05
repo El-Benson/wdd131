@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Ade-Benson Kehinde Michael" >
+    <meta name="description" content="Product Review Form" >
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css" >
+  </head>
+  <body>
+    <header>
+      <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+      <form action="review.html" method="get">
+        <label for="product">Product Name<span>*</span></label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <fieldset>
+          <legend>Overall Rating<span>*</span></legend>
+          <div class="stars">
+            <input type="radio" id="rate1" name="rating" value="1" required >
+            <label for="rate1" title="1 star">&#9733;</label>
+
+            <input type="radio" id="rate2" name="rating" value="2" >
+            <label for="rate2" title="2 stars">&#9733;&#9733;</label>
+
+            <input type="radio" id="rate3" name="rating" value="3" >
+            <label for="rate3" title="3 stars">&#9733;&#9733;&#9733;</label>
+
+            <input type="radio" id="rate4" name="rating" value="4" >
+            <label for="rate4" title="4 stars"
+              >&#9733;&#9733;&#9733;&#9733;</label
+            >
+
+            <input type="radio" id="rate5" name="rating" value="5" >
+            <label for="rate5" title="5 stars"
+              >&#9733;&#9733;&#9733;&#9733;&#9733;</label
+            >
+          </div>
+        </fieldset>
+
+        <label for="install-date">Date of Installation<span>*</span></label>
+        <input type="date" id="install-date" name="install-date" required >
+
+        <fieldset>
+          <legend>Useful Features</legend>
+          <label
+            ><input
+              type="checkbox"
+              id="feature1"
+              name="features"
+              value="Easy Setup"
+            >
+            Easy Setup</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="feature2"
+              name="features"
+              value="Durable"
+            >
+            Durable</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="feature3"
+              name="features"
+              value="Compact Design"
+            >
+            Compact Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="feature4"
+              name="features"
+              value="Energy Efficient"
+            >
+            Energy Efficient</label
+          >
+        </fieldset>
+
+        <label for="review">Written Review</label>
+        <textarea
+          id="review"
+          name="review"
+          rows="4"
+          cols="50"
+          placeholder="Write your thoughts..."
+        ></textarea>
+
+        <label for="username">User Name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Your name"
+        >
+
+        <input type="submit" value="Submit Review" >
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> | WDD131 | Ade-Benson Kehinde Michael |
+        Last Modified: <span id="lastModified"></span>
+      </p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("lastModified").textContent =
+        document.lastModified;
+    </script>
+  </body>
+</html>
