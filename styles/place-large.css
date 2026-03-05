@@ -1,0 +1,70 @@
+main {
+  position: relative;
+  margin: 1rem auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero {
+  position: relative;
+}
+
+.data,
+.weather {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 280px;
+}
+
+.data {
+  top: 15%;
+  left: 8%;
+}
+
+.weather {
+  bottom: 15%;
+  right: 8%;
+}
+
+.data h2,
+.weather h2 {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Large view only */
+
+.weather h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* Adjust inline icon */
+#weather-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
